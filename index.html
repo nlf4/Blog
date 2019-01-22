@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sarabun:400,700" rel="stylesheet">
+    <title>Into the Forest</title>
+</head>
+<body>
+
+    <header>
+     <h1>Into the Forest.</h1>   
+    </header>
+    
+
+
+    <nav id="main">
+        <ul>
+            <li class="logo"><a href="#">EXPLORE.</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Photos</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="site-wrap">
+        <p>Bacon ipsum dolor amet andouille bacon pork belly pork chop, hamburger tongue salami spare ribs boudin ham pork loin. Jowl boudin tongue biltong pork ham hock chicken hamburger burgdoggen. Bacon short ribs porchetta, hamburger shank burgdoggen tongue pork belly ground round meatloaf. Meatloaf landjaeger tenderloin kielbasa meatball.</p>
+        <p>Andouille short loin prosciutto salami chuck shankle. Pork belly sirloin bresaola tongue, beef turkey venison alcatra cupim porchetta pork loin salami flank short ribs. Drumstick beef ribs kevin beef, rump pork loin shankle meatball tri-tip. Strip steak turkey meatloaf porchetta. Biltong picanha rump pork brisket pork belly venison shoulder swine drumstick short ribs. Strip steak short ribs bacon, beef sirloin sausage shoulder ground round leberkas. Ham hock cupim ham pancetta tongue flank beef beef ribs frankfurter capicola hamburger sausage kevin kielbasa alcatra.</p>
+        <p>Ham doner flank, jerky strip steak beef turkey kevin. Ham jowl biltong pastrami doner tail shank chuck. Shankle capicola tail strip steak, frankfurter fatback corned beef drumstick meatball filet mignon. Drumstick biltong flank, salami pork loin short loin sirloin short ribs ground round landjaeger ham hock turkey chicken hamburger. Bacon t-bone pork belly swine landjaeger frankfurter andouille biltong. Cow filet mignon spare ribs, pork loin pastrami tri-tip capicola tail rump ground round.</p>
+    
+
+        <img src="images/rio.jpg" alt="Arial photo Rio de Janeiro">
+
+        <p>Hamburger turducken filet mignon beef ribs ball tip. Jerky brisket fatback strip steak pork chop alcatra meatball tenderloin turducken short loin tail. Picanha shankle meatloaf, ham doner filet mignon bresaola ball tip biltong salami capicola. Landjaeger tri-tip jowl pork loin, shoulder tongue beef capicola.</p>
+        <p>Cupim strip steak short ribs short loin. Porchetta ribeye jowl short ribs andouille turkey ground round venison ham tongue salami pancetta ball tip bresaola. Pig drumstick beef ribs shankle venison. Pancetta brisket alcatra, drumstick hamburger picanha spare ribs tail bacon chicken pork belly. Corned beef rump pork chop t-bone swine short loin ham flank meatloaf drumstick beef picanha pastrami.</p>
+        <p>Pancetta alcatra ribeye doner. Filet mignon beef prosciutto ribeye landjaeger capicola. Tongue ribeye drumstick shank, frankfurter short loin bacon turkey porchetta t-bone sirloin pork tri-tip boudin. Burgdoggen corned beef tenderloin tri-tip spare ribs, pastrami alcatra boudin porchetta. Pig tenderloin ham, pastrami hamburger pork chop ground round shankle frankfurter jerky bacon salami. Shoulder fatback tenderloin tail doner pork chop. Corned beef kevin burgdoggen, jowl prosciutto bacon cupim sirloin jerky doner salami landjaeger.</p>
+        <img src="images/sculpture.jpg" alt="Sculpture at the Louvre">
+
+        <p>Bacon ipsum dolor amet porchetta salami frankfurter pork chop. Beef ribs sirloin ham hock burgdoggen. Beef ribs ham ball tip boudin strip steak prosciutto drumstick, doner bresaola meatball chicken shoulder chuck. Flank cupim pork, t-bone spare ribs kevin pork loin bacon short ribs jowl. Bacon kevin biltong t-bone, ball tip cow salami doner porchetta hamburger beef filet mignon chicken spare ribs tri-tip.</p>
+    
+        <p>Alcatra buffalo jerky short loin cow bacon shoulder tongue. Ham hock ball tip kielbasa prosciutto tail beef ribs picanha tongue pork loin cow ribeye. Doner ham shank, swine ribeye short ribs pork chop sausage burgdoggen landjaeger jerky venison filet mignon tri-tip. Chuck capicola ribeye corned beef shank ball tip ham pork, landjaeger sirloin doner tongue turkey. Sirloin filet mignon fatback pork kevin jowl tri-tip buffalo tenderloin. Biltong shoulder burgdoggen cow, ball tip cupim beef bacon andouille swine.</p>
+        <p>Pancetta alcatra ribeye doner. Filet mignon beef prosciutto ribeye landjaeger capicola. Tongue ribeye drumstick shank, frankfurter short loin bacon turkey porchetta t-bone sirloin pork tri-tip boudin. Burgdoggen corned beef tenderloin tri-tip spare ribs, pastrami alcatra boudin porchetta. Pig tenderloin ham, pastrami hamburger pork chop ground round shankle frankfurter jerky bacon salami. Shoulder fatback tenderloin tail doner pork chop. Corned beef kevin burgdoggen, jowl prosciutto bacon cupim sirloin jerky doner salami landjaeger.</p>
+        <img src="images/travel.jpg" alt="Travel photo">
+    </div>
+    
+
+
+
+<script>
+    const nav = document.querySelector('#main');
+    const topOfNav = nav.offsetTop;
+
+
+    function fixNav() {
+        if(window.scrollY >= topOfNav) {
+        document.body.style.paddingTop = nav.offsetHeight + 'px';
+        document.body.classList.add('fixed-nav');
+        } else {
+        
+        document.body.classList.remove('fixed-nav');
+        document.body.style.paddingTop = 0;
+        }
+    }
+
+    window.addEventListener('scroll', fixNav);
+    
+    
+    
+</script>
+</body>
+</html>
